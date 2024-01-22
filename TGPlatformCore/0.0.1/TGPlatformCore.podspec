@@ -21,4 +21,6 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   
   s.requires_arc = true
+
+  s.dependency 'Alamofire', "5.6.4"
 end
