@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name             = 'TGPlatformCore'
   s.version          = '0.0.1'
-  s.summary          = 'TGPlatformCore framework'
-  s.description      = 'Treenod TGPlatformCore framework'
+  s.summary          = "#{s.name} framework"
+  s.description      = "Treenod #{s.name} framework"
   s.homepage         = 'https://www.treenod.com/'
   s.license          = { :type => '', :file => '#{Dir.pwd}/../../LICENSE' }
   s.author           = 'Treenod'
@@ -16,11 +16,8 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '12.0'
 
-  #s.pod_target_xcconfig = { 'VALID_ARCHS' => 'arm64 x86_64' }
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  
-  #s.requires_arc = true
 
   s.dependency 'Alamofire', '5.6.4'
 end
