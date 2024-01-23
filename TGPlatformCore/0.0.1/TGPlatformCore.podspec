@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
   s.platform = :ios, "12.0"
   s.swift_versions = '5.0'
 
-  s.source = { :http => 'https://static.treenod.com/cocoapods/TGPlatformCore/0.0.1/TGPlatformCore.xcframework.zip' }
+  s.source = { :http => "https://static.treenod.com/cocoapods/#{s.name}/#{s.version}/#{s.name}.xcframework.zip" }
 
-  s.vendored_frameworks = "TGPlatformCore.xcframework"
+  s.vendored_frameworks = "#{s.name}.xcframework"
   
   s.ios.deployment_target = '12.0'
 
