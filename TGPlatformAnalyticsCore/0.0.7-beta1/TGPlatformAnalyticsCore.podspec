@@ -10,10 +10,12 @@ Pod::Spec.new do |s|
   s.platform = :ios, "12.0"
   s.swift_versions = '5.0'
 
+  # Remote
   s.source = { :http => "https://static.treenod.com/tgplatform/ios/#{s.name}/#{s.version}/#{s.name}.xcframework.zip" }
 
   s.vendored_frameworks = "#{s.name}.xcframework"
-  
+
+  # Local  
   #s.source = { :git => "file://#{__dir__}/#{s.name}" }
   #s.source_files = "#{s.name}/#{s.name}/**/*.swift"
 
@@ -23,5 +25,6 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.dependency 'RealmSwift', '10.49.1'
+  s.dependency 'PLCrashReporter', '1.11.2'
   s.dependency 'TGPlatformCore', "#{s.version}"
 end
