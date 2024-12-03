@@ -20,4 +20,6 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.dependency 'TGPlatformService', "#{s.version}"
+  s.dependency 'SnapKit', '5.7.1'
+  s.dependency 'Then', '3.0.0'
 end
