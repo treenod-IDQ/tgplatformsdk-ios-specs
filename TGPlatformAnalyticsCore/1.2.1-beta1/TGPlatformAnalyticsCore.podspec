@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
-  s.dependency 'RealmSwift', '10.49.1'
+  s.dependency 'RealmSwift', '10.54.1'
   s.dependency 'PLCrashReporter', '1.11.2'
   s.dependency 'TGPlatformCore', "#{s.version}"
 end
