@@ -20,5 +20,5 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   s.dependency 'TGPlatformService', "#{s.version}"
-  s.dependency 'FBSDKLoginKit', '17.1.0'
+  s.dependency 'FBSDKLoginKit', '18.0.0'
 end
