@@ -24,4 +24,5 @@ Pod::Spec.new do |s|
   s.dependency 'TGPlatformService', "#{s.version}"
   s.dependency 'SnapKit', '5.7.1'
   s.dependency 'Then', '3.0.0'
+  s.dependency 'SDWebImage', '5.21.0'
 end
